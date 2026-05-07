@@ -82,8 +82,8 @@
     font-feature-settings: 'cv11', 'ss01';
     -webkit-font-smoothing: antialiased;
     background-image:
-      radial-gradient(800px circle at 10% 0%, oklch(0.78 0.16 165 / 0.08), transparent 50%),
-      radial-gradient(700px circle at 90% 30%, oklch(0.72 0.14 220 / 0.06), transparent 50%);
+      radial-gradient(900px circle at 85% 10%, oklch(0.78 0.14 60 / 0.06), transparent 55%),
+      radial-gradient(700px circle at 10% 80%, oklch(0.4 0.02 250 / 0.25), transparent 60%);
     background-attachment: fixed;
   }
   h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.02em; }
