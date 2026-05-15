@@ -5,9 +5,8 @@ import { Menu, X } from "lucide-react";
 const links = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
-  { href: "#experience", label: "Experience" },
+  { href: "#experience", label: "My Work" },
   { href: "#projects", label: "Projects" },
-  { href: "#education", label: "Education" },
 ];
 
 export function Navbar() {
