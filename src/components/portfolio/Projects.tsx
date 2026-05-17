@@ -8,21 +8,24 @@ import landing from "@/assets/project-landing.jpg";
 const projects = [
   {
     title: "Online Exam Portal",
-    description: "Secure exam platform with authentication, timed MCQ tests, and instant result generation.",
+    description:
+      "Secure exam platform with authentication, timed MCQ tests, and instant result generation.",
     image: exam,
     tags: ["React", "JavaScript", "SQL"],
     features: ["User authentication", "Timer-based exam", "MCQ system", "Result generation"],
   },
   {
     title: "Employee Management System",
-    description: "Full-stack CRUD application with employee dashboards, search, and filtering capabilities.",
+    description:
+      "Full-stack CRUD application with employee dashboards, search, and filtering capabilities.",
     image: ems,
     tags: ["React", "Java", "Spring Boot", "MySQL"],
     features: ["CRUD operations", "Dashboard", "Search & filters", "Responsive"],
   },
   {
     title: "Modern Responsive Landing Page",
-    description: "Conversion-focused landing page with smooth animations and a polished mobile-first UI.",
+    description:
+      "Conversion-focused landing page with smooth animations and a polished mobile-first UI.",
     image: landing,
     tags: ["React", "Tailwind CSS"],
     features: ["Responsive design", "Smooth animations", "Modern UI", "Mobile-friendly"],
@@ -32,7 +35,11 @@ const projects = [
 export function Projects() {
   return (
     <Section id="projects">
-      <SectionHeader eyebrow="Projects" title="Selected work" description="A glimpse into the products I've designed and engineered." />
+      <SectionHeader
+        eyebrow="Projects"
+        title="Selected work"
+        description="A glimpse into the products I've designed and engineered."
+      />
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((p, i) => (
           <motion.article
@@ -66,16 +73,25 @@ export function Projects() {
               </ul>
               <div className="mt-5 flex flex-wrap gap-1.5">
                 {p.tags.map((t) => (
-                  <span key={t} className="text-[10px] font-mono uppercase tracking-wider px-2 py-1 rounded-md bg-primary/10 text-primary border border-primary/20">
+                  <span
+                    key={t}
+                    className="text-[10px] font-mono uppercase tracking-wider px-2 py-1 rounded-md bg-primary/10 text-primary border border-primary/20"
+                  >
                     {t}
                   </span>
                 ))}
               </div>
               <div className="mt-6 flex gap-2">
-                <a href="#" className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-lg border border-border bg-secondary/50 px-3 py-2 text-xs font-medium hover:bg-secondary transition">
+                <a
+                  href="#"
+                  className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-lg border border-border bg-secondary/50 px-3 py-2 text-xs font-medium hover:bg-secondary transition"
+                >
                   <Github className="w-3.5 h-3.5" /> Code
                 </a>
-                <a href="#" className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-lg bg-gradient-primary px-3 py-2 text-xs font-medium text-primary-foreground hover:opacity-90 transition">
+                <a
+                  href="#"
+                  className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-lg bg-gradient-primary px-3 py-2 text-xs font-medium text-primary-foreground hover:opacity-90 transition"
+                >
                   <ExternalLink className="w-3.5 h-3.5" /> Live Demo
                 </a>
               </div>

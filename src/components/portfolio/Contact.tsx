@@ -5,7 +5,11 @@ import { Section, SectionHeader } from "./Section";
 export function Contact() {
   return (
     <Section id="contact">
-      <SectionHeader eyebrow="Contact" title="Let's build something together" description="Open to freelance projects, full-time opportunities, and meaningful collaborations." />
+      <SectionHeader
+        eyebrow="Contact"
+        title="Let's build something together"
+        description="Open to freelance projects, full-time opportunities, and meaningful collaborations."
+      />
       <div className="grid lg:grid-cols-5 gap-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -15,7 +19,12 @@ export function Contact() {
           className="lg:col-span-2 space-y-4"
         >
           {[
-            { icon: Mail, label: "Email", value: "gayathri.somula@gmail.com", href: "mailto:gayathri.somula@gmail.com" },
+            {
+              icon: Mail,
+              label: "Email",
+              value: "gayathri.somula@gmail.com",
+              href: "mailto:gayathri.somula@gmail.com",
+            },
             { icon: Phone, label: "Phone", value: "+91 7995698816", href: "tel:+917995698816" },
             { icon: MapPin, label: "Location", value: "India" },
           ].map((c) => (
@@ -29,7 +38,9 @@ export function Contact() {
                   <c.icon className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-xs uppercase tracking-wider text-muted-foreground">{c.label}</div>
+                  <div className="text-xs uppercase tracking-wider text-muted-foreground">
+                    {c.label}
+                  </div>
                   <div className="text-sm font-medium mt-0.5">{c.value}</div>
                 </div>
               </div>
@@ -37,10 +48,22 @@ export function Contact() {
           ))}
 
           <div className="flex items-center gap-3 pt-2">
-            <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub" className="w-11 h-11 rounded-xl glass grid place-items-center hover:text-primary hover:border-primary/40 transition">
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub"
+              className="w-11 h-11 rounded-xl glass grid place-items-center hover:text-primary hover:border-primary/40 transition"
+            >
               <Github className="w-5 h-5" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="w-11 h-11 rounded-xl glass grid place-items-center hover:text-primary hover:border-primary/40 transition">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+              className="w-11 h-11 rounded-xl glass grid place-items-center hover:text-primary hover:border-primary/40 transition"
+            >
               <Linkedin className="w-5 h-5" />
             </a>
           </div>
@@ -67,7 +90,9 @@ export function Contact() {
           </div>
           <Field name="subject" label="Subject" placeholder="Project inquiry" />
           <div>
-            <label className="text-xs uppercase tracking-wider text-muted-foreground">Message</label>
+            <label className="text-xs uppercase tracking-wider text-muted-foreground">
+              Message
+            </label>
             <textarea
               name="message"
               required
@@ -88,7 +113,17 @@ export function Contact() {
   );
 }
 
-function Field({ name, label, type = "text", placeholder }: { name: string; label: string; type?: string; placeholder?: string }) {
+function Field({
+  name,
+  label,
+  type = "text",
+  placeholder,
+}: {
+  name: string;
+  label: string;
+  type?: string;
+  placeholder?: string;
+}) {
   return (
     <div>
       <label className="text-xs uppercase tracking-wider text-muted-foreground">{label}</label>

@@ -10,7 +10,10 @@ const stats = [
 
 export function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex flex-col justify-end pt-28 pb-12 overflow-hidden">
+    <section
+      id="home"
+      className="relative min-h-screen flex flex-col justify-end pt-28 pb-12 overflow-hidden"
+    >
       {/* Background */}
       <div className="absolute inset-0 -z-10">
         <img
@@ -66,8 +69,10 @@ export function Hero() {
               transition={{ duration: 0.7, delay: 0.4 }}
               className="mt-5 max-w-xl text-base md:text-lg text-muted-foreground leading-relaxed"
             >
-              I build <span className="text-foreground font-medium">clean, responsive, and scalable</span> web
-              applications — from intuitive React frontends to robust Java &amp; Spring Boot backends.
+              I build{" "}
+              <span className="text-foreground font-medium">clean, responsive, and scalable</span>{" "}
+              web applications — from intuitive React frontends to robust Java &amp; Spring Boot
+              backends.
             </motion.p>
 
             <motion.div
@@ -107,7 +112,9 @@ export function Hero() {
                 transition={{ duration: 0.6, delay: 0.4 + i * 0.1 }}
                 className="flex-1 rounded-2xl border border-border/70 bg-card/40 backdrop-blur p-4 lg:p-5"
               >
-                <div className="font-display text-2xl lg:text-4xl font-bold tracking-tight">{s.value}</div>
+                <div className="font-display text-2xl lg:text-4xl font-bold tracking-tight">
+                  {s.value}
+                </div>
                 <div className="mt-1 text-[10px] lg:text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
                   {s.label}
                 </div>

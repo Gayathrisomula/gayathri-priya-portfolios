@@ -22,15 +22,16 @@ export function About() {
           className="lg:col-span-3 glass rounded-3xl p-8 md:p-10 shadow-elegant"
         >
           <p className="text-lg leading-relaxed text-foreground/90">
-            I'm a <span className="text-primary font-medium">Computer Science graduate</span> with
-            a passion for building elegant digital products. I enjoy bridging the gap between
-            thoughtful design and robust engineering — crafting interfaces that feel intuitive
-            and backends that scale with confidence.
+            I'm a <span className="text-primary font-medium">Computer Science graduate</span> with a
+            passion for building elegant digital products. I enjoy bridging the gap between
+            thoughtful design and robust engineering — crafting interfaces that feel intuitive and
+            backends that scale with confidence.
           </p>
           <p className="mt-5 text-muted-foreground leading-relaxed">
-            My toolkit spans <span className="text-foreground">React, Java, Spring Boot, SQL,
-            HTML, CSS,</span> and modern JavaScript. I thrive on solving real-world problems,
-            shipping clean code, and continuously learning what's next in the web ecosystem.
+            My toolkit spans{" "}
+            <span className="text-foreground">React, Java, Spring Boot, SQL, HTML, CSS,</span> and
+            modern JavaScript. I thrive on solving real-world problems, shipping clean code, and
+            continuously learning what's next in the web ecosystem.
           </p>
 
           <div className="mt-8 grid grid-cols-2 gap-3 text-sm">

@@ -12,9 +12,16 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Gayathri Priya — Java Full Stack Developer" },
-      { name: "description", content: "Portfolio of Gayathri Priya, a Java Full Stack Developer building responsive, user-friendly, and scalable web applications with React, Java, and Spring Boot." },
+      {
+        name: "description",
+        content:
+          "Portfolio of Gayathri Priya, a Java Full Stack Developer building responsive, user-friendly, and scalable web applications with React, Java, and Spring Boot.",
+      },
       { property: "og:title", content: "Gayathri Priya — Java Full Stack Developer" },
-      { property: "og:description", content: "Premium portfolio showcasing full stack projects, skills, and experience." },
+      {
+        property: "og:description",
+        content: "Premium portfolio showcasing full stack projects, skills, and experience.",
+      },
     ],
   }),
   component: Index,

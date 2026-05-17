@@ -18,7 +18,9 @@ export function Experience() {
             <div className="w-11 h-11 rounded-xl bg-gradient-primary grid place-items-center text-primary-foreground">
               <Briefcase className="w-5 h-5" />
             </div>
-            <span className="text-xs font-mono uppercase tracking-wider text-primary">Experience</span>
+            <span className="text-xs font-mono uppercase tracking-wider text-primary">
+              Experience
+            </span>
           </div>
           <h3 className="text-xl font-semibold">Associate Software Developer</h3>
           <p className="text-muted-foreground mt-1">Vijay Software Solutions</p>
@@ -49,18 +51,23 @@ export function Experience() {
             <div className="w-11 h-11 rounded-xl bg-gradient-primary grid place-items-center text-primary-foreground">
               <GraduationCap className="w-5 h-5" />
             </div>
-            <span className="text-xs font-mono uppercase tracking-wider text-primary">Education</span>
+            <span className="text-xs font-mono uppercase tracking-wider text-primary">
+              Education
+            </span>
           </div>
           <h3 className="text-xl font-semibold">Bachelor of Technology</h3>
           <p className="text-muted-foreground mt-1">Computer Science Engineering</p>
           <p className="mt-5 text-sm text-muted-foreground leading-relaxed">
-            Built a strong foundation in data structures, algorithms, databases, and
-            software engineering principles — alongside hands-on experience in
-            full-stack web development through coursework and personal projects.
+            Built a strong foundation in data structures, algorithms, databases, and software
+            engineering principles — alongside hands-on experience in full-stack web development
+            through coursework and personal projects.
           </p>
           <div className="mt-6 flex flex-wrap gap-2">
             {["DSA", "DBMS", "OOP", "Web Development", "OS"].map((t) => (
-              <span key={t} className="text-[10px] font-mono uppercase tracking-wider px-2 py-1 rounded-md bg-secondary/60 border border-border text-muted-foreground">
+              <span
+                key={t}
+                className="text-[10px] font-mono uppercase tracking-wider px-2 py-1 rounded-md bg-secondary/60 border border-border text-muted-foreground"
+              >
                 {t}
               </span>
             ))}

@@ -52,7 +52,11 @@ export function Navbar() {
             Get in touch
           </a>
 
-          <button className="md:hidden text-foreground" onClick={() => setOpen(!open)} aria-label="Menu">
+          <button
+            className="md:hidden text-foreground"
+            onClick={() => setOpen(!open)}
+            aria-label="Menu"
+          >
             {open ? <X /> : <Menu />}
           </button>
         </nav>
@@ -64,11 +68,20 @@ export function Navbar() {
             className="md:hidden pb-4 flex flex-col gap-3"
           >
             {links.map((l) => (
-              <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="text-muted-foreground hover:text-foreground text-sm uppercase tracking-widest">
+              <a
+                key={l.href}
+                href={l.href}
+                onClick={() => setOpen(false)}
+                className="text-muted-foreground hover:text-foreground text-sm uppercase tracking-widest"
+              >
                 {l.label}
               </a>
             ))}
-            <a href="#contact" onClick={() => setOpen(false)} className="mt-2 inline-flex justify-center items-center rounded-full bg-foreground text-background px-5 py-2.5 text-sm font-medium">
+            <a
+              href="#contact"
+              onClick={() => setOpen(false)}
+              className="mt-2 inline-flex justify-center items-center rounded-full bg-foreground text-background px-5 py-2.5 text-sm font-medium"
+            >
               Get in touch
             </a>
           </motion.div>

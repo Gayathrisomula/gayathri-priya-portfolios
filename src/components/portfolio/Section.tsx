@@ -1,7 +1,15 @@
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
 
-export function SectionHeader({ eyebrow, title, description }: { eyebrow: string; title: string; description?: string }) {
+export function SectionHeader({
+  eyebrow,
+  title,
+  description,
+}: {
+  eyebrow: string;
+  title: string;
+  description?: string;
+}) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -19,7 +27,15 @@ export function SectionHeader({ eyebrow, title, description }: { eyebrow: string
   );
 }
 
-export function Section({ id, children, className = "" }: { id?: string; children: ReactNode; className?: string }) {
+export function Section({
+  id,
+  children,
+  className = "",
+}: {
+  id?: string;
+  children: ReactNode;
+  className?: string;
+}) {
   return (
     <section id={id} className={`relative py-24 md:py-32 ${className}`}>
       <div className="container mx-auto px-6">{children}</div>
