@@ -21,7 +21,7 @@ export function Navbar() {
   }, []);
 
   return (
-    <motion.header
+<motion.header
       initial={{ y: -30, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
@@ -62,7 +62,7 @@ export function Navbar() {
         </nav>
 
         {open && (
-          <motion.div
+<motion.div
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             className="md:hidden pb-4 flex flex-col gap-3"
@@ -90,3 +90,7 @@ export function Navbar() {
     </motion.header>
   );
 }
+
+
+
+

@@ -7,7 +7,7 @@ export function Experience() {
     <Section id="experience">
       <SectionHeader eyebrow="Journey" title="Experience & Education" />
       <div className="grid lg:grid-cols-2 gap-6">
-        <motion.div
+<motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -40,7 +40,7 @@ export function Experience() {
           </ul>
         </motion.div>
 
-        <motion.div
+<motion.div
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -77,3 +77,7 @@ export function Experience() {
     </Section>
   );
 }
+
+
+
+

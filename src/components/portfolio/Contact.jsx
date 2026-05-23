@@ -89,6 +89,7 @@ export function Contact() {
             <Field name="email" label="Email" type="email" placeholder="jane@example.com" />
           </div>
           <Field name="subject" label="Subject" placeholder="Project inquiry" />
+          
           <div>
             <label className="text-xs uppercase tracking-wider text-muted-foreground">
               Message
@@ -113,17 +114,7 @@ export function Contact() {
   );
 }
 
-function Field({
-  name,
-  label,
-  type = "text",
-  placeholder,
-}: {
-  name: string;
-  label: string;
-  type?: string;
-  placeholder?: string;
-}) {
+function Field({ name, label, type = "text", placeholder }) {
   return (
     <div>
       <label className="text-xs uppercase tracking-wider text-muted-foreground">{label}</label>

@@ -14,7 +14,7 @@ export function About() {
     <Section id="about">
       <SectionHeader eyebrow="About Me" title="Crafting code with purpose" />
       <div className="grid lg:grid-cols-5 gap-10 items-start">
-        <motion.div
+<motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -50,7 +50,7 @@ export function About() {
 
         <div className="lg:col-span-2 grid grid-cols-2 gap-4">
           {stats.map((s, i) => (
-            <motion.div
+<motion.div
               key={s.label}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -68,3 +68,7 @@ export function About() {
     </Section>
   );
 }
+
+
+
+

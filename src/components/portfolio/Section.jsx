@@ -5,16 +5,12 @@ export function SectionHeader({
   eyebrow,
   title,
   description,
-}: {
-  eyebrow: string;
-  title: string;
-  description?: string;
 }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
+      viewport={{ once: true, amount: 0.15 }}
       transition={{ duration: 0.6 }}
       className="max-w-2xl mx-auto text-center mb-14"
     >
@@ -31,10 +27,6 @@ export function Section({
   id,
   children,
   className = "",
-}: {
-  id?: string;
-  children: ReactNode;
-  className?: string;
 }) {
   return (
     <section id={id} className={`relative py-24 md:py-32 ${className}`}>
@@ -42,3 +34,7 @@ export function Section({
     </section>
   );
 }
+
+
+
+

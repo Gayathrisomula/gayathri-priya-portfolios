@@ -31,7 +31,7 @@ export function Hero() {
         <div className="grid lg:grid-cols-12 gap-10 items-end">
           {/* LEFT — name + intro */}
           <div className="lg:col-span-9">
-            <motion.div
+<motion.div
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -48,10 +48,9 @@ export function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-              className="font-display font-black uppercase leading-[0.85] tracking-[-0.04em] text-[18vw] sm:text-[14vw] lg:text-[10.5vw]"
+              className="font-display font-bold uppercase tracking-tight text-4xl sm:text-6xl md:text-7xl lg:text-8xl leading-tight text-foreground"
             >
-              <span className="block text-foreground">GAYATHRI</span>
-              <span className="block text-foreground/25">PRIYA</span>
+              GAYATHRI <span className="text-gradient font-extrabold">PRIYA</span>
             </motion.h1>
 
             <motion.p
@@ -60,7 +59,7 @@ export function Hero() {
               transition={{ duration: 0.7, delay: 0.3 }}
               className="mt-8 text-xs sm:text-sm font-mono uppercase tracking-[0.3em] text-muted-foreground"
             >
-              Java Full Stack Developer · Fresher
+              Java Full Stack Developer
             </motion.p>
 
             <motion.p
@@ -105,7 +104,7 @@ export function Hero() {
           {/* RIGHT — stat cards */}
           <div className="lg:col-span-3 flex lg:flex-col gap-3 lg:gap-4">
             {stats.map((s, i) => (
-              <motion.div
+<motion.div
                 key={s.label}
                 initial={{ opacity: 0, x: 30 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -139,3 +138,7 @@ export function Hero() {
     </section>
   );
 }
+
+
+
+
