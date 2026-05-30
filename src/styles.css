@@ -124,4 +124,17 @@
     background-size: 40px 40px;
     mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
   }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
 }

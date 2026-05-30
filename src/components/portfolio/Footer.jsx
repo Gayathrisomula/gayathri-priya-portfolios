@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 export function Footer() {
   return (
     <footer className="border-t border-border/60 py-10">
-      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div className="w-full max-w-[1800px] mx-auto px-6 md:px-12 lg:px-16 flex flex-col md:flex-row items-center justify-between gap-4">
         <div>
           <div className="font-display font-bold text-lg">
             Gayathri Priya<span className="text-primary">.</span>
@@ -46,7 +46,3 @@ export function Footer() {
     </footer>
   );
 }
-
-
-
-

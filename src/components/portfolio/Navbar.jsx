@@ -29,7 +29,7 @@ export function Navbar() {
         scrolled ? "bg-background/70 backdrop-blur-xl border-b border-border/50" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-6 lg:px-10">
+      <div className="w-full max-w-[1800px] mx-auto px-6 md:px-12 lg:px-16">
         <nav className="flex items-center justify-between h-20">
           <a href="#home" className="font-display font-bold text-xl tracking-tight">
             Gayathri<span className="text-primary">.</span>

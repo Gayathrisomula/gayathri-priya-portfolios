@@ -30,7 +30,7 @@ export function Section({
 }) {
   return (
     <section id={id} className={`relative py-24 md:py-32 ${className}`}>
-      <div className="container mx-auto px-6">{children}</div>
+      <div className="w-full max-w-[1800px] mx-auto px-6 md:px-12 lg:px-16">{children}</div>
     </section>
   );
 }

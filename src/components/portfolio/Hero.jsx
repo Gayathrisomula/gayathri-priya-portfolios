@@ -2,11 +2,6 @@ import { motion } from "framer-motion";
 import { ArrowRight, Mail, Play } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
-const stats = [
-  { value: "8.5", label: "CGPA · B.Tech" },
-  { value: "10+", label: "Projects" },
-  { value: "100%", label: "Recruiter Ready" },
-];
 
 export function Hero() {
   return (
@@ -27,10 +22,10 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
       </div>
 
-      <div className="container mx-auto px-6 lg:px-10 w-full">
+      <div className="w-full max-w-[1800px] mx-auto px-6 md:px-12 lg:px-16">
         <div className="grid lg:grid-cols-12 gap-10 items-end">
           {/* LEFT — name + intro */}
-          <div className="lg:col-span-9">
+          <div className="lg:col-span-12 max-w-4xl">
 <motion.div
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
@@ -99,26 +94,6 @@ export function Hero() {
                 <Play className="w-3.5 h-3.5 fill-current" /> Meet Gayathri
               </a>
             </motion.div>
-          </div>
-
-          {/* RIGHT — stat cards */}
-          <div className="lg:col-span-3 flex lg:flex-col gap-3 lg:gap-4">
-            {stats.map((s, i) => (
-<motion.div
-                key={s.label}
-                initial={{ opacity: 0, x: 30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 + i * 0.1 }}
-                className="flex-1 rounded-2xl border border-border/70 bg-card/40 backdrop-blur p-4 lg:p-5"
-              >
-                <div className="font-display text-2xl lg:text-4xl font-bold tracking-tight">
-                  {s.value}
-                </div>
-                <div className="mt-1 text-[10px] lg:text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
-                  {s.label}
-                </div>
-              </motion.div>
-            ))}
           </div>
         </div>
 
